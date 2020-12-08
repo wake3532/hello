@@ -61,3 +61,6 @@ async def on_member_remove(member):
         await client.get_channel(syschannel).send(embed=embed)
     except:
         return None
+    
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
